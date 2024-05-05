@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "skibidicertifieddiscordintegrator",
+	"version": "${version}",
+	"name": "skibidicertifieddiscordintegrator",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"falingunit"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/skibidicertifieddiscordintegrator/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.falingunit.skibidicertifieddiscordintegrator.SCDI"
+		],
+		"client": [
+			"net.falingunit.skibidicertifieddiscordintegrator.SCDIClient"
+		],
+		"fabric-datagen": [
+			"net.falingunit.skibidicertifieddiscordintegrator.SCDIDataGenerator"
+		]
+	},
+	"mixins": [
+		"skibidicertifieddiscordintegrator.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
